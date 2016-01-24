@@ -1,0 +1,5 @@
+<ul>
+  <% @comments.each do |comment| %>
+    <li><%= comment.user.username %> Said: <%= comment.body %></li>
+  <% end %>
+</ul>
