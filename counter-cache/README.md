@@ -24,6 +24,8 @@ siege -c 10 -t10M http://localhost:9292/posts
 
 check performance on newrelic
 
+checkout after branch, run `rake db:migrate` then check performance again.
+
 ## Result
 
 ### Before
@@ -42,4 +44,12 @@ Post Load (0.3ms)  SELECT  "posts".* FROM "posts" LIMIT 10
  (0.3ms)  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 10]]
 ```
 
-Newrelic resonse time is 16.3ms
+Newrelic resonse time is 16.3ms.
+
+### After
+
+```
+SELECT  "posts".* FROM "posts" LIMIT 10
+```
+
+Newrelic response time is 7.04ms.
