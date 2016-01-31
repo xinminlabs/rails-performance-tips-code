@@ -17,7 +17,7 @@ puma -e production
 run siege to test performance
 
 ```
-siege -c 10 -t10M http://localhost:9292/comments
+siege -c 10 -t10M http://localhost:9292/posts
 ```
 
 check performance on newrelic

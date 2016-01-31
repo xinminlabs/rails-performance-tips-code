@@ -6,6 +6,6 @@ User.delete_all
 end
 first_user_id = User.first.id
 
-1000.times do
+100000.times do
   Post.create title: Faker::Lorem.sentence, body: Faker::Hipster.paragraph, user_id: rand(100) + first_user_id
 end
