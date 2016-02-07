@@ -27,6 +27,8 @@ gem 'faker'
 gem 'newrelic_rpm'
 gem 'puma'
 gem 'rails-api'
+gem 'oj'
+gem 'oj_mimic_json'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

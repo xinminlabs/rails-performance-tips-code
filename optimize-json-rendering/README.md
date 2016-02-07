@@ -27,3 +27,7 @@ check performance on newrelic
 ### Before
 
 Newrelic response time is 6.28ms.
+
+### After
+
+Newrelic response time is 5.76ms.
