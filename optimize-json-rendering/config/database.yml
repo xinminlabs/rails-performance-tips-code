@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  database: optimize_json_rendering
+  pool: 5
+  username: postgres
+  password:
+  host: localhost
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
