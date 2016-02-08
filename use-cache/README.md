@@ -22,8 +22,14 @@ siege -c 10 -t10M http://localhost:9292/comments
 
 check performance on newrelic
 
+checkout after branch and check performance again on newrelic
+
 ## Result
 
 ### Before
 
 Newrelic response time is 12.2ms.
+
+### After
+
+Newrelic response time is 9.97ms.

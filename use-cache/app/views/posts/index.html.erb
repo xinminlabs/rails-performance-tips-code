@@ -1,5 +1,7 @@
 <ul>
   <% @posts.each do |post| %>
-    <li><%= post.user.username %> said <%= post.title %></li>
+    <% cache post do %>
+      <li><%= post.user.username %> said <%= post.title %></li>
+    <% end %>
   <% end %>
 </ul>
